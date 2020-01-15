@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy data1",
+				"description": "dd",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -87,9 +88,9 @@
 						},
 						"folderPath": "data/dw-stageing"
 					},
-					"integrationRuntime": {
-						"referenceName": "integrationRuntime1",
-						"type": "IntegrationRuntimeReference"
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
 					}
 				}
 			}
